@@ -50,13 +50,13 @@
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>1.5.5.Final</version>
+            <version>${mapstruct.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
-            <version>1.5.5.Final</version>
+            <version>${mapstruct.processor.version}</version>
         </dependency>
 
         <dependency>
@@ -73,5 +73,10 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <mapstruct.processor.version>1.5.5.Final</mapstruct.processor.version>
+    </properties>
 
 </project>
