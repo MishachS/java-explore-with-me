@@ -25,6 +25,7 @@ public class Stats {
 
     @Column(name = "user_ip", nullable = false, length = 15)
     private String ip;
+
     @Column(name = "created", nullable = false)
     private LocalDateTime timestamp;
 }
