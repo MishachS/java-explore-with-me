@@ -89,7 +89,7 @@ public class EventServiceImpl implements EventService {
 
     private Location findOrCreateLocation(LocationDto locationDto) {
         Optional<Location> savedLocationOpt = locationRepository
-                .findByLatAndLon(locationDto.getLat(), locationDto.getLat());
+                .findByLatAndLon(locationDto.getLat(), locationDto.getLon());
         return savedLocationOpt.orElseGet(() -> locationRepository.save(locationMapper.toLocation(locationDto)));
     }
 
